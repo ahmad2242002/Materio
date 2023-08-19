@@ -348,7 +348,7 @@
                 formData.append('companyname', companyname);
                 formData.append('image', image);
                 $.ajax({
-                    url: 'http://localhost:4000/insert',
+                    url: 'https://ahel-server.vercel.app/insert',
                     type: 'POST',
                     data: formData,
                     contentType: false,
@@ -538,7 +538,7 @@
             var data = { email: email };
             var post = JSON.stringify(data);
             $.ajax({
-                url: 'http://localhost:4000/sendotp',
+                url: 'https://ahel-server.vercel.app/sendotp',
                 headers: {
                     'Content-Type': 'application/json'
                 },

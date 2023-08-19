@@ -262,7 +262,7 @@ button:hover, a:hover {
     var data = { id: id };
     let post = JSON.stringify(data);
     $.ajax({
-        url: 'http://localhost:4000/getdata',
+        url: 'https://ahel-server.vercel.app/getdata',
         headers: {
             'Content-Type': 'application/json'
         },

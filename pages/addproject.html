@@ -330,7 +330,7 @@
         formData.append('totalphases', totalphases);
        alert(phasename);
         $.ajax({
-            url: 'http://localhost:4000/insertproject',
+            url: 'https://ahel-server.vercel.app/insertproject',
             type: 'POST',
             data: formData,
             contentType: false,
@@ -400,7 +400,7 @@
     var data = { id: id };
     let post = JSON.stringify(data);
     $.ajax({
-        url: 'http://localhost:4000/getdata',
+        url: 'https://ahel-server.vercel.app/getdata',
         headers: {
             'Content-Type': 'application/json'
         },

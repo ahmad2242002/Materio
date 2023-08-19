@@ -251,7 +251,7 @@
         var pid;
         var found = false;
         $.ajax({
-            url: 'http://localhost:4000/getproject',
+            url: 'https://ahel-server.vercel.app/getproject',
             headers: {
                 'Content-Type': 'application/json'
             },
@@ -394,7 +394,7 @@
     var data = { id: id };
     let post = JSON.stringify(data);
     $.ajax({
-        url: 'http://localhost:4000/getdata',
+        url: 'https://ahel-server.vercel.app/getdata',
         headers: {
             'Content-Type': 'application/json'
         },
@@ -422,7 +422,7 @@
         var data = { id: id };
         let post = JSON.stringify(data);
         $.ajax({
-            url: 'http://localhost:4000/getprojectupdate',
+            url: 'https://ahel-server.vercel.app/getprojectupdate',
             headers: {
                 'Content-Type': 'application/json'
             },
@@ -542,7 +542,7 @@
         formData.append('phasesids', totalupdatedphase);
         formData.append('phasedata',phasedata);
         $.ajax({
-            url: 'http://localhost:4000/updateproject',
+            url: 'https://ahel-server.vercel.app/updateproject',
             type: 'POST',
             data: formData,
             contentType: false,
@@ -565,7 +565,7 @@
         var data = { id: id };
         let post = JSON.stringify(data);
         $.ajax({
-            url: 'http://localhost:4000/getindividualproject',
+            url: 'https://ahel-server.vercel.app/getindividualproject',
             headers: {
                 'Content-Type': 'application/json'
             },

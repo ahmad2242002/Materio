@@ -166,7 +166,7 @@
         var table = document.getElementById("ptable");
         var pid;
         $.ajax({
-            url: 'http://localhost:4000/getprojectuser',
+            url: 'https://ahel-server.vercel.app/getprojectuser',
             headers: {
                 'Content-Type': 'application/json'
             },
@@ -252,7 +252,7 @@
         var data = { id: id };
         let post = JSON.stringify(data);
         $.ajax({
-            url: 'http://localhost:4000/getindividualproject',
+            url: 'https://ahel-server.vercel.app/getindividualproject',
             headers: {
                 'Content-Type': 'application/json'
             },
@@ -279,7 +279,7 @@
     var data = { id: id };
     let post = JSON.stringify(data);
     $.ajax({
-        url: 'http://localhost:4000/getdata',
+        url: 'https://ahel-server.vercel.app/getdata',
         headers: {
             'Content-Type': 'application/json'
         },
@@ -308,7 +308,7 @@
         var data = { userid:userid ,id: id };
         let post = JSON.stringify(data);
         $.ajax({
-            url: 'http://localhost:4000/bookplot',
+            url: 'https://ahel-server.vercel.app/bookplot',
             headers: {
                 'Content-Type': 'application/json'
             },
