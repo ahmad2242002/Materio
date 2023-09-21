@@ -5,7 +5,7 @@ steps:
   - name: checkout
     image: alpine/git
     commands:
-      - git clone <repository_url> /drone/src  # Replace <repository_url> with your repository URL
+      - git clone https://github.com/ahmad2242002/Materio.git /drone/src  # Replace <repository_url> with your repository URL
       - cd /drone/src  # Change the working directory to your project root
 
   - name: install_dependencies
