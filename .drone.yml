@@ -1,21 +1,10 @@
 kind: pipeline
-type: docker
 name: default
 
 steps:
   - name: build
-    image: docker
+    image: node:14  # Use a Node.js version compatible with your project
     commands:
-      - docker build -t my-app .
+      - npm install  # Install project dependencies (if you have any)
+      - npm run build  # Replace with your build script or commands
 
-  - name: test
-    image: node
-    commands:
-      - npm install
-      - npm test
-
-  - name: deploy
-    image: golang
-    commands:
-      - go build
-      - scp my-app user@server:/path/to/deployment
